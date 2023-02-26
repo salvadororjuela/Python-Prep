@@ -1,6 +1,12 @@
 # 1. Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla si es mayor o menor a cero
 entero = 2
 print(entero)
+if entero < 0:
+    print("Negativo")
+elif entero > 0:
+    print("Positivo")
+else:
+    print("El numero es 0")
 
 # 2. Crear dos variables y un condicional que informe si son del mismo tipo de dato
 par = 4
@@ -24,16 +30,24 @@ for i in range(0, 6):
     print(f"{i} a la tercera potencia es igual a: {alCubo}")
 
 # 5. Crear una variable que contenga un número entero y realizar un ciclo for la misma cantidad de ciclos
-entero1 = 6
+entero1 = int(input("Digite un numero entero mayor que 0: "))
 for i in range(entero1):
     print(i)
 
 # 6. Utilizar un ciclo while para realizar el factoreo de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
-while True:
-    entero1 -= 1
-    print(entero1)
-    if entero1 == 0:
-        break
+print("**********************************************************************")
+numOriginal = entero1
+if type(entero1) == int:
+    if entero1 > 0:
+        factorial = 1
+        while entero1 > 0:
+            factorial *= entero1
+            entero1 -= 1
+    else:
+        print("El numero es menor que 0")
+print(f"El factorial de {numOriginal} es {factorial}")
+print("**********************************************************************")
+
 
 # 7. Crear un ciclo for dentro de un ciclo while
 cadena = "Pepalarepax"
@@ -85,8 +99,8 @@ for i in range(2, 31):
     primo = True
     inicial = 2
     while inicial < i:
+        sinBreak += 1
         if i % inicial == 0:
-            sinBreak += 1
             primo = False
         inicial += 1
 
@@ -97,8 +111,8 @@ for i in range(2, 31):
     primo = True
     inicial = 2
     while inicial < i:
+        conBreak += 1
         if i % inicial == 0:
-            conBreak += 1
             primo = False
             break
         inicial += 1
@@ -112,8 +126,8 @@ for i in range(2, 50):
     primo = True
     inicial = 2
     while inicial < i:
+        sinBreak += 1
         if i % inicial == 0:
-            sinBreak += 1
             primo = False
         inicial += 1
 
@@ -124,8 +138,8 @@ for i in range(2, 50):
     primo = True
     inicial = 2
     while inicial < i:
+        conBreak += 1
         if i % inicial == 0:
-            conBreak += 1
             primo = False
             break
         inicial += 1
