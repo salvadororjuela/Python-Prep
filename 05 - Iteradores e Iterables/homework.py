@@ -6,7 +6,7 @@ while numeroAgregar < 0:
     numerosInversos.append(numeroAgregar)
     numeroAgregar += 1
 
-print(numerosInversos)    
+print(numerosInversos)
 
 # 2. ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo
 # los números pares?
@@ -123,8 +123,8 @@ for i in diccLis:
         length += 1
 print(length)
 
-# 16. Tomar la lista del punto anterior y convertir cada elemento en una lista 
-# si no lo es
+# 16. Tomar la lista del punto anterior y convertir cada elemento en una
+# lista si no lo es
 
 for pos, obj in enumerate(diccLis):
     if type(obj) != list:
