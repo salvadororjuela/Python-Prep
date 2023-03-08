@@ -16,7 +16,7 @@ class Herramientas:
         for i in range(2, numero):
             if numero % i == 0:
                 esPrimo = False
-                break
+                return esPrimo
 
         if esPrimo:
             print(f"{numero} SI ES PRIMO")
@@ -44,7 +44,7 @@ class Herramientas:
                 maximo = cantidad[indice]
                 num = masRepetido[indice]
 
-        return f"el numero que mas se repite es: {num} y se repite: {maximo} veces"
+        return [num, maximo]
 
     # convierte las temperaturas de la lista de grados centigrados a fahrenheit
     def temperaturas(self):

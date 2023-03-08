@@ -1,7 +1,3 @@
-timestamp,humedad,temperatura,lluvia
-1645191499,29,45,False
-1645191585,29,47,False
-1645191620,27,50,False
-1645191651,27,50,False
-1645191869,30,40,False
-1645191902,31,45,True
+Timestamp: 1678235625.738552 | Temperatura: 20º | Humedad: 90% | Llovio: True '
+'Timestamp: 1678235642.678468 | Temperatura: 20º | Humedad: 90% | Llovio: True 
+Timestamp: 1678235644.28376 | Temperatura: 20º | Humedad: 90% | Llovio: True 
